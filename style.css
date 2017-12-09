@@ -1,0 +1,18 @@
+body {
+  background-image: url(./img/tokyo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  -webkit-animation: bluranime 2.5s ease 0s 1 normal;
+  position: relative;
+}
+@-webkit-keyframes bluranime {
+  0% {
+    -webkit-filter: blur(100px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+  }
+}
