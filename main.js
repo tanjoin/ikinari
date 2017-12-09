@@ -1,5 +1,10 @@
  var imageList = [
-    "./img/001.jpg"
+   "img/IMG_3273.JPG",
+   "img/IMG_5346.jpg",
+   "img/IMG_5758.jpg",
+   "img/IMG_5759.jpg",
+   "img/IMG_6112.jpg",
+   "img/IMG_6265.JPG"
  ];
 
 function choose() {
