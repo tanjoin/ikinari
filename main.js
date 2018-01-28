@@ -6,7 +6,8 @@
    "img/IMG_6112.jpg",
    "img/IMG_6265.JPG",
    "img/IMG_6500.jpg",
-   "img/IMG_6648.jpg"
+   "img/IMG_6648.jpg",
+   "img/IMG_7020.jpg"
  ];
 
 function choose() {
