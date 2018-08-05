@@ -41,7 +41,7 @@ const set = (data) => {
   const video = document.getElementById('ikinari-video');
   const placeholder = document.getElementById('ikinari-img');
   if (data.type === "img") {
-    body.style.backgroundImage = 'url(' + src + ')';
+    body.style.backgroundImage = 'url(' + data.src + ')';
     video.display = 'none';
     placeholder.display = 'none';
   } else {
