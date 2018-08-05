@@ -16,3 +16,11 @@ body {
     -webkit-filter: blur(0px);
   }
 }
+
+.video-wrap {
+  position: relative;
+}
+
+#ikinari-video, #ikinari-img {
+  display: none;
+}
