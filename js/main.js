@@ -31,6 +31,15 @@ var list = [
 	{ type: "heic", src: "img/IMG_9877.heic", mov: "img/IMG_9877.mov" }
 ];
 
+const setMovieHeight = (video) => {
+  const mvWidth = window.outerHeight * 1.76388889;
+  const mvHeight = window.outerWidth / 1.76388889;
+  const leftMargin = (mvWidth - window.outerWidth) / 2;
+  if (mvHeight < window.outerHeight) {
+    video.style.left = - leftMargin;
+  }
+};
+
 const chooseData = () => {
   var index = Math.floor(Math.random() * list.length);
   return list[index];
@@ -38,17 +47,18 @@ const chooseData = () => {
 
 const set = (data) => {
   const body = document.getElementById('body');
-  const video = document.getElementById('ikinari-video');
-  const placeholder = document.getElementById('ikinari-img');
   if (data.type === "img") {
     body.style.backgroundImage = 'url(' + data.src + ')';
-    video.display = 'none';
-    placeholder.display = 'none';
   } else {
-    video.display = undefined;
-    placeholder.display = undefined;
+    // setMovieHeight(video);
+    const video = document.createElement('video');
     video.src = data.mov;
-    placeholder.src = data.src;
+    video.autoplay = true;
+    video.muted = true;
+    video.loop = true;
+    const container = document.getElementById('video-container')
+    container.appendChild(video);
+    video.load();
   }
 };
 
@@ -57,3 +67,9 @@ const load = () => {
 };
 
 load();
+
+window.onload = () => {
+};
+
+window.onresize = () => {
+};
