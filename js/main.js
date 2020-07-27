@@ -28,6 +28,7 @@ var list = [
 	{ type: "img", src: "img/IMG_9103.png" },
 	{ type: "img", src: "img/IMG_9274.png" },
 	{ type: "img", src: "img/IMG_9877.png" },
+	{ type: "img", src: "img/IMG_6667.jpg" },
   { type: "mov", mov: "img/IMG_6265.mp4" },
   { type: "mov", mov: "img/IMG_6112.mp4" },
 	{ type: "mov", mov: "img/IMG_6500.mp4" },
